@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Nexus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        .product-page { padding-top: 100px; padding-bottom: 80px; }
+        .product-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; }
+        .product-main-image { background: var(--bg-secondary); border-radius: 20px; padding: 40px; display: flex; justify-content: center; align-items: center; min-height: 400px; box-shadow: var(--shadow-small); }
+        .product-main-image i { font-size: 15rem; color: var(--primary-color); filter: drop-shadow(0 0 20px rgba(74, 108, 247, 0.4)); }
+        .product-info h1 { font-size: 3rem; margin-bottom: 10px; color: var(--text-color); }
+        .product-price { font-size: 2rem; font-weight: 700; color: var(--primary-color); margin-bottom: 20px; display: block; }
+        .product-description { font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 30px; }
+        .product-features-list { list-style: none; margin-bottom: 40px; }
+        .product-features-list li { margin-bottom: 15px; display: flex; align-items: center; font-size: 1.05rem; }
+        .product-features-list i { color: #10b981; margin-right: 15px; font-size: 1.2rem; }
+        .action-group { display: flex; gap: 20px; }
+        @media (max-width: 992px) { .product-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Nexus<span>.</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="product-page container">
+        <div class="product-grid">
+            <div class="product-main-image">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="product-info">
+                <h1>Nexus Enterprise <span class="highlight">Elite</span></h1>
+                <span class="product-price">$199.00</span>
+                <p class="product-description">Trải nghiệm sức mạnh đột phá với Nexus Enterprise Elite. Chúng tôi cung cấp giải pháp chuyển đổi số toàn diện cho doanh nghiệp của bạn, với tốc độ ánh sáng và bảo mật tuyệt đối.</p>
+                <ul class="product-features-list">
+                    <li><i class="fas fa-check-double"></i> Băng thông không giới hạn</li>
+                    <li><i class="fas fa-check-double"></i> Bảo mật cấp quân đội (Military-grade)</li>
+                    <li><i class="fas fa-check-double"></i> Hỗ trợ AI chuyên sâu 24/7</li>
+                    <li><i class="fas fa-check-double"></i> Tích hợp Cloud chỉ trong 1 click</li>
+                </ul>
+                <div class="action-group">
+                    <button class="btn-primary" style="padding: 15px 40px;">Mua Ngay</button>
+                    <button class="btn-secondary" style="padding: 15px 30px;"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nexus. All rights reserved. | Thiết kế bởi Antigravity 🦾</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
